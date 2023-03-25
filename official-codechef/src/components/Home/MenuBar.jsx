@@ -5,7 +5,9 @@ const MenuBar = () => {
   return (
     <div className={styles.main}>
       <div className={styles.Container}>
-        <div>About</div>
+        <div>
+          <a onClick={scrollToTop}>About</a>
+          </div>
         <div>Departments</div>
         <div>Our Team</div>
         <div>Past Events</div>
