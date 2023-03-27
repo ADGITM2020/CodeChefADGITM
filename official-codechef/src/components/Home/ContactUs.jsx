@@ -57,8 +57,9 @@ const ContactUs = () => {
                 <div className={styles.input2}>
                 <label htmlFor="msg">Your Message</label><br/>
                 <p>Write your message here</p>
-                <textarea name="msg" id="msg"  rows="1" maxLength={300} className="textarea"></textarea>
-            
+                <div className={styles.text}>
+                <textarea name="msg" id="msg"  rows="1" maxLength={300}  className="textarea"></textarea>
+                </div>
                 </div>
                 <Link href="#"><button className={styles.btn}>Send Message</button></Link>
             </div>

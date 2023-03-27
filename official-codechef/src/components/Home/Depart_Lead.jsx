@@ -164,7 +164,7 @@ const Depart_Lead = () => {
             <div className={styles.text}>
                 <p className={styles.name}>Kartikey Gupta</p>
                 <p className={styles.designation}>President</p>
-                <p className={styles.quoteHead}>"Leadership is not a one-man show. It's a collective effort, a team effort, and you have to build the team."</p>
+                <p className={styles.quotes}>"Leadership is not a one-man show. It's a collective effort, a team effort, and you have to build the team."</p>
             </div>
                 </div>
                 <div className={styles.incontent}>
@@ -178,7 +178,7 @@ const Depart_Lead = () => {
             <div className={styles.text}>
                 <p className={styles.name}>Aashi Aggarwal</p>
                 <p className={styles.designation}>Vice President</p>
-                <p className={styles.quoteHead}>"Leadership is not about being in charge. It's about taking care of those in your charge."</p>
+                <p className={styles.quotes}>"Leadership is not about being in charge. It's about taking care of those in your charge."</p>
             </div>
                 </div>
                 <div className={styles.incontent}>
@@ -192,7 +192,7 @@ const Depart_Lead = () => {
             <div className={styles.text}>
                 <p className={styles.name}>Hitansh Gupta</p>
                 <p className={styles.designation}>General Secretary</p>
-                <p className={styles.quoteHead}>"A leader is one who knows the way, goes the way, and shows the way."</p>
+                <p className={styles.quotes}>"A leader is one who knows the way, goes the way, and shows the way."</p>
             </div>
                 </div>
                 <div className={styles.incontent}>
@@ -206,7 +206,7 @@ const Depart_Lead = () => {
             <div className={styles.text}>
                 <p className={styles.name}>Ansh Sachdeva</p>
                 <p className={styles.designation}>Media Outreach Head</p>
-                <p className={styles.quoteHead}>“If your actions inspire others to dream more, learn more, do more and become more, you are a leader.”</p>
+                <p className={styles.quotes}>“If your actions inspire others to dream more, learn more, do more and become more, you are a leader.”</p>
             </div>
                 </div>
           
