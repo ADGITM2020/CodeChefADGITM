@@ -115,6 +115,9 @@ flex-direction: column;
     resize: none;
     overflow-x: hidden;
     width: 92%;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
  
 .input2 textarea:focus{
@@ -129,9 +132,6 @@ outline: none;
     padding: 0.6rem;
     font-size: large;
     cursor: pointer;
- }
- .textarea{
-    font-size: 12 pt;
  }
  @media (max-width:320px){
 .main{
