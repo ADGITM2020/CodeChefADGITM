@@ -442,4 +442,28 @@
         font-size: 1rem;
     }
  }
- 
+
+@keyframes infiniteHorizontalScroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+.sponsorSlider {
+    max-width: 100%;
+    overflow: hidden;
+    gap: 10px;
+}
+.sponsorSliderTrack {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: infiniteHorizontalScroll 15s linear infinite;
+}
+.sponsorSlide {
+    display: inline-block;
+    height: 100px;
+    width: 300px;
+}
