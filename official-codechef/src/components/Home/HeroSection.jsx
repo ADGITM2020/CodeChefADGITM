@@ -32,11 +32,9 @@ const HeroSection = () => {
 
       <div className={styles.pastSponsorBg} >
         <div className={styles.sponsorSlider}>
-          <div className={styles.sponsorSliderTrack}>
             {
               getMultiSponsor()
             }
-          </div>
         </div>
         {/* <Image
       src="/pastSponsorBg.png"

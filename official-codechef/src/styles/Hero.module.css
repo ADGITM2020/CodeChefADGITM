@@ -444,26 +444,38 @@
  }
 
 @keyframes infiniteHorizontalScroll {
-    0% {
-        transform: translateX(0%);
+    from {
+        transform: translateX(0);
     }
-    100% {
-        transform: translateX(-50%);
+    to {
+        transform: translateX(
+            calc(-100% - calc(clamp(10rem, 1rem + 40vmin, 30rem) / 14))
+        );
     }
 }
 .sponsorSlider {
-    max-width: 100%;
+    display: flex;
     overflow: hidden;
-    gap: 10px;
+    user-select: none;
+    gap: calc(clamp(10rem, 1rem + 40vmin, 30rem) / 14);
 }
 .sponsorSliderTrack {
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-    animation: infiniteHorizontalScroll 15s linear infinite;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: var(--gap);
+    min-width: 100%;
+    animation: infiniteHorizontalScroll 30s linear infinite;
 }
 .sponsorSlide {
-    display: inline-block;
-    height: 100px;
-    width: 300px;
+    display: grid;
+	place-items: center;
+	width: clamp(10rem, 1rem + 40vmin, 30rem);
+	aspect-ratio: 16/9;
+	padding: calc(clamp(10rem, 1rem + 40vmin, 30rem) / 10);
+}
+.sponsorSlide img {
+    width: 100%;
+    height: 100%;
 }

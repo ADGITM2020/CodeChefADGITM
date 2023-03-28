@@ -46,6 +46,15 @@ function getMultiSponsor() {
             </div>
         )
     }
-    return lst  
+    return (
+        <>
+            <div className={styles.sponsorSliderTrack}>
+                {lst}
+            </div>
+            <div className={styles.sponsorSliderTrack} aria-hidden="true">
+                {lst}
+            </div>
+        </>
+    ) 
 }
 export {getMultiSponsor};
