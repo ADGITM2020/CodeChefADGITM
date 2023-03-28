@@ -13,9 +13,9 @@ const Leader = ({leader_member_name, leader_tech_stack, leader_info}) => {
       <h3>{leader_member_name}</h3>
       <p>{leader_tech_stack}</p>
     </div>
-      <hr className={styles.line} />
-      <p>{leader_info}</p>
-      <hr className={styles.line} />
+ 
+      <p className={styles.teamInfo}>{leader_info}</p>
+      
       <div className={styles.socialLinks}>
       <Link href="/"><FaLinkedinIn/></Link>
       <Link href="/"><AiFillGithub/></Link>
@@ -32,9 +32,9 @@ const Member = ({team_member_name, tech_stack, team_info, linkedin_link, github_
         <h3>{team_member_name}</h3>
         <p>{tech_stack}</p>
       </div>
-      <hr className={styles.line} />
+
       <p className={styles.teamInfo}>{team_info}</p>
-      <hr className={styles.line} />
+     
       <div className={styles.socialLinks}>
       <Link href="/"><FaLinkedinIn/></Link>
       <Link href="/"><AiFillGithub/></Link>

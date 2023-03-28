@@ -53,8 +53,8 @@ const teamMembers = [
   {
     name: "Tanisha Bansal",
     stack: "Marketing Lead ",
-    info: `With this, give a heartfelt welcome to our Internal affairs lead, "Ms. Tanisha Bansal" & "Mr. Veer Yadav". They are meticulous, tactical, and an excellent communicator who gets the job done.
-    💫They keeps themselves on top of budding trends and sees opportunities to capitalize on them, which is not an easy feat to achieve.💫`,
+    info: `With this, give a heartfelt welcome to "Ms. Tanisha Bansal". They are meticulous, tactical, and an excellent communicator who gets the job done.
+    💫They keeps themselves on top of budding trends and sees opportunities to capitalize on them 💫`,
     img: "./images/Team/Team_Leads/Tanisha.jpg"
   },
   {
@@ -72,13 +72,21 @@ const teamMembers = [
   {
     name: "Alokita Vij",
     stack: "Content Lead",
-    info: "lorem ipsum",
+    info:  `With great power comes great responsibility…😌
+
+    Presenting to you the person who coordinate events with the president, oversee the internal matters with the leads…😮‍💨the individual who plans, ensures the team meets its targets and help us remain successful. 🥹
+    
+    Vice President– Aashi Aggarwal✨🌱`,
     img: "./images/Team/Team_Leads/Alokita.jpg"
   },
   {
     name: "Ansh Sachdeva",
     stack: "Media Outreach head",
-    info: "lorem ipsum",
+    info:  `With great power comes great responsibility…😌
+
+    Presenting to you the person who coordinate events with the president, oversee the internal matters with the leads…😮‍💨the individual who plans, ensures the team meets its targets and help us remain successful. 🥹
+    
+    Vice President– Aashi Aggarwal✨🌱`,
     img: "./images/Team/Core_Team/Ansh.jpg"
   },
 ];
