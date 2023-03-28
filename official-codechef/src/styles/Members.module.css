@@ -9,7 +9,7 @@
     margin-left: 70px;
     max-width: 90%;
 
-  }
+}
   
   .grid{
     display: grid;
@@ -17,7 +17,7 @@
     grid-template-rows: 50% 37% 40% 36% 20% ;
     width: 90%;
     max-width: 90%;
-    height: 1000px;
+    height: 1200px;
     padding: 20px;
     margin-left: 70px;
   }
@@ -49,11 +49,14 @@
   line-height: 1;
   letter-spacing: 0.005em;
   padding: 20px;
-  border: 7px solid white;
   }
   .heading{
+    font-family: 'Roboto', sans-serif;
     font-size: 21px;
+    font-weight: 500;
+    line-height: 1.2;
     text-align: center;
+    color: #333333;
   }
   .leader_heading{
     font-size: 21px;
@@ -61,38 +64,52 @@
     color: black;
   }
   .teamInfo{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 30px;
-    font-size: 18px;
-    font-weight: 500px;
-  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5;
   letter-spacing: 0.01em;
-    color: white;
+  padding: 20px;
+  color: #555555;
   }
-  
+
   .Leader_info{
     background-color: #87CEEB;
     padding: 50px;
     font-size: 25px;
     font-weight: 500px;
-  line-height: 1;
-  letter-spacing: 0.01em;
-    color: white;
-  border: 7px solid white;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+
   }
   
-  .line{
-    width: 80%;
-    font-size: 30px;
-    margin-left: 30px;
+
+
+  .socialLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
   }
   
-  .socialLinks{
-    text-align: center;
-    padding: 20px;
-    font-size: 15px;
+  .socialLinks a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #87CEEB;
+    transition: all 0.3s ease-in-out;
   }
+  
+  .socialLinks a:hover {
+    transform: scale(1.2);
+  }
+  
   
   /*responsive*/
   @media only screen and (max-width: 750px) {
@@ -114,24 +131,31 @@
       margin-left: 0px;
     }
   
-    .leader_information{
-      display: grid;
-      height: 200px;
-      grid-template-columns: 50% 50%;
-    }
-  
-    .member_information{
-      display: grid;
-      grid-template-columns: 50% 50%;
-      height: 200px;
-    }
-  
-    .leader_triangle{
-      display:none;
-    }
-  
-    .triangle{
+    
+      .heading{
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1;
+        text-align: center;
+        color: #333333;
+      }
+      .leader_heading{
+        font-size: 15px;
+        line-height: 1;
+        text-align: center;
+        color: #333333;
+      }
+      .teamInfo{
       display: none;
-    }
+      }
+
+      .socialLinks a {
+        margin: 10px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+      }
+      
   }
   
