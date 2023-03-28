@@ -11,7 +11,7 @@ import Image from "next/image";
 const UpcomingEvents = () => {
   return (
     <div>
-      <div className={styles.main}>
+      <div className={styles.main} id="upcoming-events">
         <div className={styles.heading}>
           <h1>Our Upcoming Events</h1>
         </div>

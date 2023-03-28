@@ -4,7 +4,7 @@ import Image from 'next/image';
 import styles from "../../styles/Hero.module.css";
 import {getMultiSponsor} from "./Sponsors"
 import pastSponsorBg from '../../../public/pastSponsorBg.png';
-
+import societyMeet from "../../../public/images/Society Meet/SocietyMeet2.jpg";
 const HeroSection = () => {
   return (
     <>
@@ -36,6 +36,7 @@ const HeroSection = () => {
               getMultiSponsor()
             }
         </div>
+      </div>
         {/* <Image
       src="/pastSponsorBg.png"
       alt="Past Sponsors"
@@ -43,27 +44,28 @@ const HeroSection = () => {
       height={150}
       className={styles.pastSponsorBgImage}
     /> 
-    <p className={styles.pastSponsorText}>OUR PAST SPONSORS</p> */}
+    <p className={styles.pastSponsorText}>OUR PAST SPONSORS</p>
+    </div>
+          */}
+   
+   <div className={styles.detailsPart1}>
+    <div className={styles.part1left}>
+    <Image
+    src="/wework.webp"
+    alt="How we work"
+    width={400}
+    height={400}
+    className={styles.detailsImage}/>
+    </div>
+    <div className={styles.part1right}>
+      <div className={styles.heading} >
+      How we work ?
       </div>
-
-      <div className={styles.detailsPart1}>
-        <div className={styles.part1left}>
-          <Image
-            src="/wework.webp"
-            alt="How we work"
-            width={400}
-            height={400}
-            className={styles.detailsImage} />
-        </div>
-        <div className={styles.part1right}>
-          <div className={styles.heading} >
-            How we work ?
-          </div>
-          <div className={styles.text}>
-            Codechef ADGITM chapter organises regular contests , hackathons , weekly and monthly meets , sessions with mentors and seniors , all to bring out the best in us and motivate us to aspire high in the future.
-          </div>
-        </div>
+      <div className={styles.text}>
+      Codechef ADGITM chapter organises regular contests , hackathons , weekly and monthly meets , sessions with mentors and seniors , all to bring out the best in us and motivate us to aspire high in the future.
       </div>
+    </div>
+   </div>
 
 
 
@@ -109,4 +111,4 @@ const HeroSection = () => {
   )
 }
 
-export default HeroSection
+export default HeroSection;

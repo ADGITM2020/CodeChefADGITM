@@ -9,8 +9,8 @@ import { IconContext } from 'react-icons';
 import Link from 'next/link';
 const ContactUs = () => {
   return (
-    <IconContext.Provider value={{color:"white", }}>
-    <div className={styles.contact}>
+    <IconContext.Provider value={{color:"white ", }}>
+    <div className={styles.contact} id="contact-us">
         <div className={styles.head}>
         <p className={styles.heading}> Get In Touch!</p>
         <p className={styles.sub_heading}>Contact us for any queries.</p>
@@ -57,11 +57,11 @@ const ContactUs = () => {
                 <div className={styles.input2}>
                 <label htmlFor="msg">Your Message</label><br/>
                 <p>Write your message here</p>
-                <div>
-                <input type="text"  id='msg' name='msg'/>
+                
+                <textarea name="msg" id="msg"  rows="1" maxLength={300}  className="textarea"></textarea>
+               
                 </div>
-                </div>
-                <Link href=""><button className={styles.btn}>Send Message</button></Link>
+                <Link href="#"><button className={styles.btn}>Send Message</button></Link>
             </div>
         </div>
     </div>

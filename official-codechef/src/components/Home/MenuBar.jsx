@@ -5,12 +5,12 @@ const MenuBar = () => {
   return (
     <div className={styles.main}>
       <div className={styles.Container}>
-        <div>About</div>
-        <div>Departments</div>
-        <div>Our Team</div>
-        <div>Past Events</div>
-        <div>Upcoming Events</div>
-        <div>Contact Us</div>
+        <div><a href="#about">About</a></div>
+        <div><a href="#departments">Departments</a></div>
+        <div><a href="team">Our Team</a></div>
+        <div><a href="#past-events">Past Events</a></div>
+        <div><a href="#upcoming-events">Upcoming Events</a></div>
+        <div><a href="#contact-us">Contact Us</a></div>
       </div>
     </div>
   );
