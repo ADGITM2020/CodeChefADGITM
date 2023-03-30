@@ -39,7 +39,7 @@ const HeroSection = () => {
    <div className={styles.detailsPart1}>
     <div className={styles.part1left}>
     <Image
-    src="/wework.webp"
+    src="/images/What we do.jpg"
     alt="How we work"
     width={400}
     height={400}
