@@ -33,18 +33,20 @@
 /* left */
 .left{
     margin: 1rem;
+    padding: 0.5rem;
     border-radius: 0.5rem;
     background-color: #21658C;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 26%;
+    /* width: 28%; */
     overflow: hidden;
 }
 .lefthead{
     color: white;
     font-size: larger;
-   margin-left: -4.2rem;
+   margin-left: -3.5rem;
+   margin-bottom: 0.4rem;
 }
 .img{
    margin-left:1rem;
@@ -84,13 +86,10 @@ flex-direction: column;
  .input1a input{
     width: 100%;
     background-color:  #E9F4FF;
-    /* border-top-style: hidden;
-    border-right-style: hidden;
-    border-left-style: hidden;
-    border-bottom-style: #21658C; */
     border: none;
     border-bottom: 2px solid #21658C;
     margin-top: 1rem;
+    font-size:medium;
   
  }
  .input1a input:focus{
@@ -107,19 +106,23 @@ flex-direction: column;
     color: #494848;
     font-size: larger;
  }
- .input2 input{
-    width: 94%;
-    background-color:  #E9F4FF;
-    /* border-top-style: hidden;
-    border-right-style: hidden;
-    border-left-style: hidden;
-    border-bottom-style: #21658C; */
+.input2 textarea{
+    
+    margin-top:1.5rem;
     border: none;
     border-bottom: 2px solid #21658C;
- }
- .input2 input:focus{
-    outline: none;
- }
+    background-color:  #E9F4FF;
+    resize: none;
+    overflow-x: hidden;
+    width: 92%;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+ 
+.input2 textarea:focus{
+outline: none;
+}
  .btn{
     width: 28%;
     background-color: #21658C;
@@ -130,34 +133,41 @@ flex-direction: column;
     font-size: large;
     cursor: pointer;
  }
-
+ @media (max-width:320px){
+.main{
+    width: 100%;
+}
+.heading{
+    font-size:2rem;
+}
+ }
  @media (max-width:768px){
     .main{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    .right{
+      width: 90%;
+    }
     .input1{
         display: flex;
         flex-direction: column;
     }
-    .left{
-        width: 80%;
-    }
     .btn{
         width: 65%;
-        margin-top: 0.4rem;
-        margin-bottom:0.4rem;
+        margin-top: 0.8rem;
+        margin-bottom:1rem;
     }
     .input1a input{
         margin-top: 0.8rem;
         margin-bottom: 0.4rem;
     }
   .input1a{
-        width: 70%;
+        width: 100%;
   }
-  .input2 input{
-    width: 100%;
+  .input2 textarea{
+    width: 99%;
   }
  }
  @media (max-width:1070px){

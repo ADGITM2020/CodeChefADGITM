@@ -9,8 +9,8 @@ import { IconContext } from 'react-icons';
 import Link from 'next/link';
 const ContactUs = () => {
   return (
-    <IconContext.Provider value={{color:"white", }}>
-    <div className={styles.contact}>
+    <IconContext.Provider value={{color:"white ", }}>
+    <div className={styles.contact} id="contact-us">
         <div className={styles.head}>
         <p className={styles.heading}> Get In Touch!</p>
         <p className={styles.sub_heading}>Contact us for any queries.</p>
@@ -18,13 +18,14 @@ const ContactUs = () => {
         <div className={styles.main}>
             <div className={styles.left}>
                 <p className={styles.lefthead}>Contact Information</p>
-                <Link href="https://maps.app.goo.gl/yGUXSmzyvBqqkneS9"><Image
+                <Link href="https://maps.app.goo.gl/yGUXSmzyvBqqkneS9">
+                    <div><Image
             className={styles.img}
             src={Map}
             alt="Picture of the map"
-            width={230}
+            width={250}
             height={160}
-            /></Link>
+            /></div></Link>
             <div className={styles.bottomcontent}>
             <div className={styles.icons}>
             <p><MdLocationOn /></p><p className={styles.icontext}>FC-26, Shastri Park, New Delhi - 110 053</p>
@@ -56,11 +57,11 @@ const ContactUs = () => {
                 <div className={styles.input2}>
                 <label htmlFor="msg">Your Message</label><br/>
                 <p>Write your message here</p>
-                <div>
-                <input type="text"  id='msg' name='msg'/>
+                
+                <textarea name="msg" id="msg"  rows="1" maxLength={300}  className="textarea"></textarea>
+               
                 </div>
-                </div>
-                <Link href=""><button className={styles.btn}>Send Message</button></Link>
+                <Link href="#"><button className={styles.btn}>Send Message</button></Link>
             </div>
         </div>
     </div>

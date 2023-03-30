@@ -162,18 +162,19 @@
     display: flex;
     margin-top: 5rem;
     justify-content: center;
+    height: 50vh;
 }
 .part1left{
-    width: 51%;
+    flex: 0.5;
     text-align: right;
     padding-right: 4rem;
-}
-.detailsImage{
-    width: 80%;
-    margin-left: auto;  
+    background-image: url("../../public/images/What we do.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .part1right{
-    width: 50%;
+    flex: 0.5;
     padding: 0 3rem;
 }
 .heading{
@@ -190,19 +191,10 @@
     margin-bottom: 1rem;
 }
 
-@media only screen and (max-width: 920px){
-    .detailsImage{
-        width: 85%;
-        margin-left: auto;  
-    }
-    .part1right{
-        width: 50%;
-        padding: 0 1rem;
-    }
-}
 @media only screen and (max-width: 800px){
     .detailsPart1{
         flex-direction: column;
+        height: 80vh;
     }
     .part1left{
         width: 100%;
@@ -229,6 +221,7 @@
 @media only screen and (max-width: 500px){
     .detailsPart1{
         flex-direction: column;
+        height: 50vh;
     }
     .part1left{
         width: 100%;
@@ -315,8 +308,7 @@
     }
     .detailsImage2{
         width: 80%;
-        margin-left: auto;
-        margin-right: auto
+        height: 68vh;
     }
     .heading{
         font-size: 2.5rem;
@@ -330,6 +322,7 @@
 @media only screen and (max-width: 500px){
     .detailsPart2{
         flex-direction: column-reverse;
+        margin-top: 0rem;
     }
     .part2right{
         width: 100%;
@@ -361,16 +354,19 @@
     justify-content: center;
 }
 .part3left{
-    width: 51%;
+    flex: 0.5;
     text-align: right;
+    margin-top: -4rem;
     padding-right: 4rem;
+    align-items: center;
+    justify-content: center;
 }
 .detailsImage{
     width: 60%;
-    margin-left: auto;  
+    /* margin-left: auto;   */
 }
 .part3right{
-    width: 50%;
+    flex: 0.5;
     padding: 0 3rem;
 }
 
@@ -406,8 +402,9 @@
     }
     .detailsImage{
         width: 80%;
-        height: 40vh;
+        height: 68vh;
     }
+
     .heading{
         font-size: 2.5rem;
         text-align: center;
@@ -432,8 +429,9 @@
     }
     .detailsImage{
         width: 90%;
-        height: 40vh;
+        height: 50vh;
     }
+
     .heading{
         font-size: 2rem;
         text-align: center;
@@ -442,4 +440,40 @@
         font-size: 1rem;
     }
  }
- 
+
+@keyframes infiniteHorizontalScroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(
+            calc(-100% - calc(clamp(10rem, 1rem + 40vmin, 30rem) / 14))
+        );
+    }
+}
+.sponsorSlider {
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: calc(clamp(10rem, 1rem + 40vmin, 30rem) / 14);
+}
+.sponsorSliderTrack {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: var(--gap);
+    min-width: 100%;
+    animation: infiniteHorizontalScroll 30s linear infinite;
+}
+.sponsorSlide {
+    display: grid;
+	place-items: center;
+	width: clamp(10rem, 1rem + 40vmin, 30rem);
+	aspect-ratio: 16/9;
+	padding: calc(clamp(10rem, 1rem + 40vmin, 30rem) / 10);
+}
+.sponsorSlide img {
+    width: 100%;
+    height: 100% ;
+}
