@@ -1,5 +1,5 @@
 .Teampage{
-   height: 400vh;
+   height: 300vh;
 }
 
 .leader_grid{
@@ -13,22 +13,27 @@
   
   .grid{
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 37% 40% 36% 20% ;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: repeat(3, 5fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     width: 90%;
     max-width: 90%;
     height: 1200px;
     padding: 20px;
     margin-left: 70px;
+    grid-gap: 0;
   }
   
   .leader_information{
+
     display: grid;
     height: 400px;
     grid-template-columns: 50% 50%;
   }
   
   .member_information{
+    background-color: red;
     display: grid;
     grid-template-columns: 50% 50%;
   }
@@ -40,6 +45,19 @@
     height: 100%;
     padding-bottom: 100%;
     object-fit: cover;
+  box-sizing: border-box;
+  background-color: green;
+  }
+  .member_img{
+    background-color: #000;
+    object-fit: cover !important;
+    background-size: cover;
+  background-position: center center;
+  border: 1px solid black;
+  background-size: cover;
+          object-fit: cover;
+          background-position: center;
+          background-repeat: no-repeat;
   }
   
   /*info side css*/
