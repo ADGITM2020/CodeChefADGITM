@@ -52,12 +52,8 @@
     background-color: #000;
     object-fit: cover !important;
     background-size: cover;
-  background-position: center center;
-  border: 1px solid black;
-  background-size: cover;
-          object-fit: cover;
-          background-position: center;
-          background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   
   /*info side css*/

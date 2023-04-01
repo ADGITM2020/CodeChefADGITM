@@ -64,7 +64,7 @@ const teamMembers = [
     info:  `With great power comes great responsibility…😌
 
     Presenting to you the person who `,
-    img: ""
+    img: "./images/Team/Team_Leads/Alokita.jpg"
   },
   {
     name: "Ansh Sachdeva",
