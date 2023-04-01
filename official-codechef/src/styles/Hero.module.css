@@ -457,25 +457,24 @@
     display: flex;
     overflow: hidden;
     user-select: none;
-    gap: calc(clamp(10rem, 1rem + 40vmin, 30rem) / 14);
 }
 .sponsorSliderTrack {
     flex-shrink: 0;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: var(--gap);
-    min-width: 100%;
-    animation: infiniteHorizontalScroll 30s linear infinite;
+    animation: infiniteHorizontalScroll 50s linear infinite;
 }
 .sponsorSlide {
     display: grid;
 	place-items: center;
-	width: clamp(10rem, 1rem + 40vmin, 30rem);
-	aspect-ratio: 16/9;
-	padding: calc(clamp(10rem, 1rem + 40vmin, 30rem) / 10);
+    /* padding-left: 20px;
+    padding-right: 20px; */
+	padding-bottom: calc(clamp(10rem, 1rem + 40vmin, 30rem) / 10);
+	padding-top: calc(clamp(10rem, 1rem + 40vmin, 30rem) / 10);
+    justify-content: space-evenly;
 }
 .sponsorSlide img {
-    width: 100%;
-    height: 100% ;
+    height: 100px;
+    width: 150px;
+    object-fit:scale-down;
 }
