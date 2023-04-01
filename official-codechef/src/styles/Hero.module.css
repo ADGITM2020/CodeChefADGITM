@@ -467,11 +467,14 @@
 .sponsorSlide {
     display: grid;
 	place-items: center;
-	width: clamp(10rem, 1rem + 40vmin, 30rem);
-	padding: calc(clamp(10rem, 1rem + 40vmin, 30rem) / 10);
+    /* padding-left: 20px;
+    padding-right: 20px; */
+	padding-bottom: calc(clamp(10rem, 1rem + 40vmin, 30rem) / 10);
+	padding-top: calc(clamp(10rem, 1rem + 40vmin, 30rem) / 10);
     justify-content: space-evenly;
 }
 .sponsorSlide img {
-    height: 50px;
-    width: 100%;
+    height: 100px;
+    width: 150px;
+    object-fit:scale-down;
 }
