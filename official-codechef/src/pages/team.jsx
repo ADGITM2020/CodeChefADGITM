@@ -9,11 +9,7 @@ const teamMembers = [
   {
     name: "Himanshu Gupta",
     stack: "Event Lead",
-    info: `Events not only allow an engaging experience with the audience but also leaves a lasting impression on the organization... right?✨
-
-    Lets us introduce you to the person who brings every exciting event of society to you. He is a person with great enthusiasm and determination to make every event look just “perfect”.😃🤌🏻
-    
-    The Event Lead of Codechef ADGITM.... Himanshu Gupta 👏🥳
+    info: `Events not only allow an engaging experience with the audience but also leaves a lasting impression on the organization... right?
     `,
     img: "./images/Team/Team_Leads/Himanshu.jpg"
   },
@@ -22,19 +18,13 @@ const teamMembers = [
     stack: "Vice president",
     info: `With great power comes great responsibility…😌
 
-    Presenting to you the person who coordinate events with the president, oversee the internal matters with the leads…😮‍💨the individual who plans, ensures the team meets its targets and help us remain successful. 🥹
-    
-    Vice President– Aashi Aggarwal✨🌱`,
+    Presenting to you the person who coordinate events with the president`,
     img: "./images/Team/Core_Team/Aashi.jpg"
   },
   {
     name: "Hitansh Gupta",
     stack: "General Secretary",
-    info: `We all are set to overcome new milestones with a zest to spread out new technical colors…🎉
-
-    Let us introduce you to the person who ensures smooth running of board meetings, brings structure and discipline to our society...🙌🏻
-    
-    The General Secretary of Codechef ADGITM… Mr. Hitansh Gupta...✨🎉🥳
+    info: `We all are set to overcome new milestones with a zest to spread out new technical colors…
     `,
     img: "./images/Team/Core_Team/Hitansh.jpg"
   },
@@ -53,8 +43,7 @@ const teamMembers = [
   {
     name: "Tanisha Bansal",
     stack: "Marketing Lead ",
-    info: `With this, give a heartfelt welcome to "Ms. Tanisha Bansal". They are meticulous, tactical, and an excellent communicator who gets the job done.
-    💫They keeps themselves on top of budding trends and sees opportunities to capitalize on them 💫`,
+    info: `With this, give a heartfelt welcome to "Ms. Tanisha Bansal". They are meticulous, tactical, and an`,
     img: "./images/Team/Team_Leads/Tanisha.jpg"
   },
   {
@@ -74,9 +63,7 @@ const teamMembers = [
     stack: "Content Lead",
     info:  `With great power comes great responsibility…😌
 
-    Presenting to you the person who coordinate events with the president, oversee the internal matters with the leads…😮‍💨the individual who plans, ensures the team meets its targets and help us remain successful. 🥹
-    
-    Vice President– Aashi Aggarwal✨🌱`,
+    Presenting to you the person who `,
     img: "./images/Team/Team_Leads/Alokita.jpg"
   },
   {
@@ -84,9 +71,7 @@ const teamMembers = [
     stack: "Media Outreach head",
     info:  `With great power comes great responsibility…😌
 
-    Presenting to you the person who coordinate events with the president, oversee the internal matters with the leads…😮‍💨the individual who plans, ensures the team meets its targets and help us remain successful. 🥹
-    
-    Vice President– Aashi Aggarwal✨🌱`,
+    Presenting to you the person who coordinate events `,
     img: "./images/Team/Core_Team/Ansh.jpg"
   },
 ];

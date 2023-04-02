@@ -70,10 +70,8 @@ const Members = ({leader_name, leader_info, leader_tech_stack, leader_img_locati
             {/* <img src={member.img} alt={member.name} className={styles.member_img}/> */}
             <div className={styles.member_img} style={{
           backgroundImage: `url(${member.img})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }} />
+        }}/>
+        
             <Member
               team_member_name={member.name}
               tech_stack={member.stack}
