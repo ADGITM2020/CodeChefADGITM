@@ -467,8 +467,8 @@
 .sponsorSlide {
     display: grid;
 	place-items: center;
-    /* padding-left: 20px;
-    padding-right: 20px; */
+    padding-left: 10px;
+    padding-right: 10px;
 	padding-bottom: calc(clamp(10rem, 1rem + 40vmin, 30rem) / 10);
 	padding-top: calc(clamp(10rem, 1rem + 40vmin, 30rem) / 10);
     justify-content: space-evenly;
