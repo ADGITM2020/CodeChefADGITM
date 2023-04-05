@@ -2,8 +2,10 @@ import React from 'react'
 import styles from "../../styles/Depart.module.css";
 import Image from 'next/image';
 import MngtImg from "../../../public/images/department/management.png";
+import MarkImg from "../../../public/images/department/marketing.png"
 import TechImg from "../../../public/images/department/Technical.png";
 import GraphicsImg from "../../../public/images/department/graphics.png";
+import vidImg from "../../../public/images/department/Video editing.png"
 import ContentImg from "../../../public/images/department/content.png";
 import RingsImg from "../../../public/images/department/twoRings.png";
 import Team_img from "../../../public/assets/team.png";
@@ -101,6 +103,26 @@ const Depart_Lead = () => {
             height={90}
             />
                 </div>
+                <p className={styles.sub_heading}>CONTENT</p>
+            </div>
+
+            <div className={styles.card}>
+            <Image
+            className={styles.imgRing}
+            src={RingsImg}
+            alt="Picture of the author"
+            width={220}
+            height={220}
+            />
+                <div className={styles.depImg}>
+                <Image
+            className={styles.img}
+            src={MarkImg}
+            alt="Picture of the author"
+            width={90}
+            height={90}
+            />
+                </div>
                 <p className={styles.sub_heading}>MARKETING</p>
             </div>
 
@@ -115,34 +137,14 @@ const Depart_Lead = () => {
                 <div className={styles.depImg}>
                 <Image
             className={styles.img}
-            src={TechImg}
-            alt="Picture of the author"
-            width={90}
-            height={90}
-            />
-                </div>
-                <p className={styles.sub_heading}>VIDEO EDITING</p>
-            </div>
-
-            <div className={styles.card}>
-            <Image
-            className={styles.imgRing}
-            src={RingsImg}
-            alt="Picture of the author"
-            width={220}
-            height={220}
-            />
-                <div className={styles.depImg}>
-                <Image
-            className={styles.img}
-            src={TechImg}
+            src={vidImg}
             alt="Picture of the author"
             width={90}
             height={90}
             />
                 </div>
           
-            <p className={styles.sub_heading}>CONTENT</p>
+            <p className={styles.sub_heading}>VIDEO EDITING</p>
             </div>
         </div>
     </div>
