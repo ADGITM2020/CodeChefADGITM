@@ -73,24 +73,24 @@ const HeroSection = () => {
           </div>
         </div>
         <div className={styles.part2right}>
-          <Image
+          {/* <Image
             src="/images/Our Goals.png"
             alt="Our Goal"
             width={350}
             height={350}
-            className={styles.detailsImage2} />
+            className={styles.detailsImage2} /> */}
         </div>
       </div>
 
 
       <div className={styles.detailsPart3}>
-        <div className={styles.part3left}>
-          <Image
+        <div className={styles.part3left} style={{color:"white"}}>
+          {/* <Image
             src="/images/Why to join us.png"
             alt="How we work"
             width={400}
             height={400}
-            className={styles.detailsImage} />
+            className={styles.detailsImage} /> */}
         </div>
         <div className={styles.part3right}>
           <div className={styles.heading} >
