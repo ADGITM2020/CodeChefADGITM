@@ -161,8 +161,6 @@
 .detailsPart1{
     display: flex;
     margin-top: 5rem;
-    justify-content: center;
-    /* align-items: center; */
     height: 50vh;
 }
 .part1left{
@@ -176,7 +174,7 @@
 }
 .part1right{
     flex: 0.5;
-    padding: 0 3rem;
+    padding: 6rem 1rem;
 }
 .heading{
     font-size: 3rem;
@@ -248,14 +246,11 @@
 
 .detailsPart2{
     display: flex;
-    /* margin-top: 5rem; */
+    margin-top: 5rem;
 }
-.part2right{
-    width: 50%;
 
-}
 .part2left{
-    width: 60%;
+    flex: 0.5;
     text-align: right;
     padding: 0 4rem;
 }
@@ -286,6 +281,7 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    height: 40vh;
 }
 @media only screen and (max-width: 1200px){
     .detailsImage2{
@@ -309,7 +305,7 @@
         width: 100%;
         text-align: center;
         padding-right: 0rem;
-        padding: 10rem;
+        padding: 9rem;
     }
     .part2left{
         width: 100%;
@@ -371,6 +367,8 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    height: 40vh;
+    margin-top: -2rem;
 }
 .part3right{
     flex: 0.5;
@@ -382,6 +380,9 @@
         width: 50%;
         padding: 0 1rem;
     }
+    .part3left{
+        margin-top: 0;
+    }
 }
 @media only screen and (max-width: 800px){
     .detailsPart3{
@@ -390,7 +391,7 @@
     }
     .part3left{
         width: 100%;
-        padding: 10rem;
+        padding: 9rem;
         padding-right: 0rem;
     }
     .part3right{
