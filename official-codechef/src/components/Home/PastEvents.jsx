@@ -13,14 +13,17 @@ const PastEvents = () => {
   let [activeIndex, setActiveIndex] = useState(0);
   let [color1, setColor1] = useState("#21658C");
   let [color2, setColor2] = useState("#bdbbbb");
-  // change activeIndex after every 2 seconds using setInterval
-  // setInterval(() => {
-  //   if (activeIndex === pastEventsData.length - 2) {
-  //     setActiveIndex(0);
-  //   } else {
-  //     setActiveIndex((prev) => prev + 2);
-  //   }
-  // }, 2000);
+  // change activeIndex after every 2 seconds
+  useEffect(()=>{
+    const interval = setInterval(() => {
+        if (activeIndex === pastEventsData.length - 2) {
+          setActiveIndex(0);
+        } else {
+          setActiveIndex((prev) => prev + 2);
+        }
+      }, 2000);
+      return () => clearInterval(interval);
+  });
 
   const handlePrevious = () => {
     if (activeIndex === 0) {
