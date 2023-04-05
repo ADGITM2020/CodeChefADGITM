@@ -24,6 +24,8 @@
   align-items: center;
   column-gap: 30px;
   margin-bottom: 30px;
+  /* transform: translate(10%);
+  transition: transform 1s ease-in; */
 }
 
 .RightContent {
@@ -105,3 +107,6 @@
     margin-bottom: 50px;
   }
 }
+/* .RightIcon :hover{
+  color: #656262;
+} */

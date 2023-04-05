@@ -4,7 +4,7 @@ import Image from 'next/image';
 import styles from "../../styles/Hero.module.css";
 import {getMultiSponsor} from "./Sponsors"
 import pastSponsorBg from '../../../public/pastSponsorBg.png';
-import societyMeet from "../../../public/images/Society Meet/SocietyMeet2.jpg";
+import weWork from "../../../public/images/What we do.jpg";
 const HeroSection = () => {
   return (
     <>
@@ -50,12 +50,6 @@ const HeroSection = () => {
    
    <div className={styles.detailsPart1}>
     <div className={styles.part1left}>
-    <Image
-    src="/wework.webp"
-    alt="How we work"
-    width={400}
-    height={400}
-    className={styles.detailsImage}/>
     </div>
     <div className={styles.part1right}>
       <div className={styles.heading} >
@@ -79,24 +73,24 @@ const HeroSection = () => {
           </div>
         </div>
         <div className={styles.part2right}>
-          <Image
+          {/* <Image
             src="/images/Our Goals.png"
             alt="Our Goal"
             width={350}
             height={350}
-            className={styles.detailsImage2} />
+            className={styles.detailsImage2} /> */}
         </div>
       </div>
 
 
       <div className={styles.detailsPart3}>
-        <div className={styles.part3left}>
-          <Image
+        <div className={styles.part3left} style={{color:"white"}}>
+          {/* <Image
             src="/images/Why to join us.png"
             alt="How we work"
-            width={350}
-            height={350}
-            className={styles.detailsImage} />
+            width={400}
+            height={400}
+            className={styles.detailsImage} /> */}
         </div>
         <div className={styles.part3right}>
           <div className={styles.heading} >

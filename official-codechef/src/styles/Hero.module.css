@@ -161,20 +161,20 @@
 .detailsPart1{
     display: flex;
     margin-top: 5rem;
-    justify-content: center;
+    height: 50vh;
 }
 .part1left{
-    width: 51%;
+    flex: 0.5;
     text-align: right;
     padding-right: 4rem;
-}
-.detailsImage{
-    width: 80%;
-    margin-left: auto;  
+    background-image: url("../../public/images/What we do.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .part1right{
-    width: 50%;
-    padding: 0 3rem;
+    flex: 0.5;
+    padding: 6rem 1rem;
 }
 .heading{
     font-size: 3rem;
@@ -190,19 +190,10 @@
     margin-bottom: 1rem;
 }
 
-@media only screen and (max-width: 920px){
-    .detailsImage{
-        width: 85%;
-        margin-left: auto;  
-    }
-    .part1right{
-        width: 50%;
-        padding: 0 1rem;
-    }
-}
 @media only screen and (max-width: 800px){
     .detailsPart1{
         flex-direction: column;
+        height: 80vh;
     }
     .part1left{
         width: 100%;
@@ -229,6 +220,7 @@
 @media only screen and (max-width: 500px){
     .detailsPart1{
         flex-direction: column;
+        height: 50vh;
     }
     .part1left{
         width: 100%;
@@ -252,18 +244,13 @@
     }
  }
 
-
-
 .detailsPart2{
     display: flex;
     margin-top: 5rem;
 }
-.part2right{
-    width: 50%;
 
-}
 .part2left{
-    width: 60%;
+    flex: 0.5;
     text-align: right;
     padding: 0 4rem;
 }
@@ -286,6 +273,16 @@
     margin-left: auto;
     margin-right: auto
 }
+.part2right{
+    flex: 0.5;
+    text-align: right;
+    padding-right: 4rem;
+    background-image: url("../../public/images/Our Goals.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
 @media only screen and (max-width: 1200px){
     .detailsImage2{
         width: 80%;
@@ -302,12 +299,13 @@
 @media only screen and (max-width: 800px){
     .detailsPart2{
         flex-direction: column-reverse;
+        margin-top: -2rem;
     }
     .part2right{
         width: 100%;
         text-align: center;
         padding-right: 0rem;
-
+        padding: 9rem;
     }
     .part2left{
         width: 100%;
@@ -315,8 +313,7 @@
     }
     .detailsImage2{
         width: 80%;
-        margin-left: auto;
-        margin-right: auto
+        height: 68vh;
     }
     .heading{
         font-size: 2.5rem;
@@ -330,6 +327,8 @@
 @media only screen and (max-width: 500px){
     .detailsPart2{
         flex-direction: column-reverse;
+        margin-top: 0rem;
+        /* margin-top: 2rem; */
     }
     .part2right{
         width: 100%;
@@ -361,43 +360,38 @@
     justify-content: center;
 }
 .part3left{
-    width: 51%;
+    flex: 0.5;
     text-align: right;
     padding-right: 4rem;
-}
-.detailsImage{
-    width: 60%;
-    margin-left: auto;  
+    background-image: url("../../public/images/Why to join us.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    margin-top: -2rem;
 }
 .part3right{
-    width: 50%;
+    flex: 0.5;
     padding: 0 3rem;
 }
 
-@media only screen and (max-width: 1200px){
-    .detailsImage{
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto
-    }
-}
 @media only screen and (max-width: 920px){
-    .detailsImage{
-        width: 90%;
-        margin-left: auto;  
-    }
     .part3right{
         width: 50%;
         padding: 0 1rem;
+    }
+    .part3left{
+        margin-top: 0;
     }
 }
 @media only screen and (max-width: 800px){
     .detailsPart3{
         flex-direction: column;
+        margin-top: 0;
     }
     .part3left{
         width: 100%;
-        text-align: center;
+        padding: 9rem;
         padding-right: 0rem;
     }
     .part3right{
@@ -406,8 +400,9 @@
     }
     .detailsImage{
         width: 80%;
-        height: 40vh;
+        height: 68vh;
     }
+
     .heading{
         font-size: 2.5rem;
         text-align: center;
@@ -420,11 +415,13 @@
 @media only screen and (max-width: 500px){
     .detailsPart3{
         flex-direction: column;
+        height: 50vh;
+        margin-top: 8rem;
+        margin-bottom: 5rem;
     }
     .part3left{
         width: 100%;
         text-align: center;
-        padding-right: 0rem;
     }
     .part3right{
         width: 100%;
@@ -432,8 +429,9 @@
     }
     .detailsImage{
         width: 90%;
-        height: 40vh;
+        height: 50vh;
     }
+
     .heading{
         font-size: 2rem;
         text-align: center;
