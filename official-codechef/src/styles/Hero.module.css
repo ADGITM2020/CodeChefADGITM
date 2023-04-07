@@ -356,10 +356,14 @@
  }
  @media only screen and (max-width: 340px){
     .detailsPart2{
-        margin-top: 9rem;
+        margin-top: 13rem;
     }
 }
-
+@media only screen and (max-width: 240px){
+    .detailsPart2{
+        margin-top: 16rem;
+    }
+}
 
 .detailsPart3{
     display: flex;
