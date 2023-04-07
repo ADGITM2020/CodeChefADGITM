@@ -330,7 +330,7 @@
 @media only screen and (max-width: 500px){
     .detailsPart2{
         flex-direction: column-reverse;
-        margin-top: 7rem;
+        margin-top: 14rem;
     }
     .part2right{
         width: 100%;
@@ -356,14 +356,10 @@
  }
  @media only screen and (max-width: 340px){
     .detailsPart2{
-        margin-top: 13rem;
+        margin-top: 21rem;
     }
 }
-@media only screen and (max-width: 240px){
-    .detailsPart2{
-        margin-top: 16rem;
-    }
-}
+
 
 .detailsPart3{
     display: flex;
