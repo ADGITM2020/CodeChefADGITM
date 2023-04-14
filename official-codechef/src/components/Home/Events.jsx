@@ -10,7 +10,7 @@ import styles from "../../styles/Home.module.css";
 
 const Events = () => {
   return (
-    <div className={styles.Events}>
+    <div id="events" className={styles.Events}>
       <PastEvents />
       <UpcomingEvents />
     </div>
