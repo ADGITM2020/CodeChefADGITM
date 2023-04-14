@@ -31,10 +31,10 @@ const ContactUs = () => {
             <p><MdLocationOn /></p><p className={styles.icontext}>FC-26, Shastri Park, New Delhi - 110 053</p>
             </div>
             <div className={styles.icons}>
-            <p><BsTelephoneFill/></p><p className={styles.icontext}>(123) 456-7890</p>
+            <p><BsTelephoneFill/></p><p className={styles.icontext}>+(91) 8475008968</p>
             </div>
             <div className={styles.icons}>
-            <p> <MdEmail/></p><p className={styles.icontext}>codechefadgitm@gmail.com</p>
+            <p> <MdEmail/></p><p className={styles.icontext}>codechefadgitmchapter@gmail.com</p>
             </div>
             </div>
             </div>

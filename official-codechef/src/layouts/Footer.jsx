@@ -1,15 +1,16 @@
 import React from "react";
 import styles from "../styles/Footer.module.css";
 import { MdLocationOn, MdCall } from "react-icons/md";
+
 import Link from "next/link";
+
 import {
-  AiFillFacebook,
-  AiOutlineTwitter,
+  
   AiFillLinkedin,
   AiFillYoutube,
-  AiOutlineGooglePlus,
+ 
 } from "react-icons/ai";
-import { BsInstagram } from "react-icons/bs";
+import { BsInstagram , BsDiscord } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -32,18 +33,14 @@ const Footer = () => {
                 </div>
                 <div className={styles.icon}>
                   <MdCall size={25} color="#194EB1" />
-                  {/* (123) 456-7890 */}
+                  tel: +(91) 8475008968
                   <a href="tel:+(91)8475008968"></a>
                 </div>
                 <div className={styles.mediaCon}>
                   <div className={styles.media}>
                     <p style={{ color: "#a3a7b1" }}>Social Media</p>
-                    <div>
-                      <AiFillFacebook size={20} color="#194EB1" />
-                    </div>
-                    <div>
-                      <AiOutlineTwitter size={20} color="#194EB1" />
-                    </div>
+                   
+                    
                     <div>
                     <Link href="https://www.linkedin.com/company/codechefadgitm"> <AiFillLinkedin size={20} color="#194EB1" />
                     </Link>
@@ -58,8 +55,10 @@ const Footer = () => {
                       </Link>
                     </div>
                     <div>
-                      <AiOutlineGooglePlus size={20} color="#194EB1" />
+                      <Link href="https://www.instagram.com/codechefadgitm/"><BsDiscord size={20} color="#194EB1" />
+                      </Link>
                     </div>
+                    
                   </div>
                 </div>
               </div>
