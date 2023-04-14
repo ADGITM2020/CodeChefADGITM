@@ -55,7 +55,7 @@ const Footer = () => {
                       </Link>
                     </div>
                     <div>
-                      <Link href="https://www.instagram.com/codechefadgitm/"><BsDiscord size={20} color="#194EB1" />
+                      <Link href="https://discord.com/invite/bNMganQEjn"><BsDiscord size={20} color="#194EB1" />
                       </Link>
                     </div>
                     
